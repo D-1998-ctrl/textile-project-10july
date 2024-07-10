@@ -1,0 +1,32 @@
+
+.Y-trader_cards-container {
+    display: grid;
+     height: 100vh; 
+    gap: 20px;
+}
+
+
+
+.ytrader-cards {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    cursor: pointer;
+}
+
+
+.ytrader-cards p {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 15px;
+}
+
+
+@media only screen and (max-width: 902px) {
+    .Y-trader_cards-container {
+            display: grid !important;
+            grid-template-columns: repeat(5, 1fr) !important;
+            grid-template-rows: repeat(10, 1fr) !important;
+            gap: 20px;
+    }
+}
